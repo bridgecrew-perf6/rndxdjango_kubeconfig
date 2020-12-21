@@ -16,4 +16,4 @@ spec:
       - name: rndxdjango
         image: 211448159615.dkr.ecr.us-east-1.amazonaws.com/rndx:1
         ports: 
-        - containerPort: 80
+        - containerPort: 8000
