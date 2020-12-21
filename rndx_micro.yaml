@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rndxdjango
+spec: 
+  selector:
+    matchLabels:
+      run: rndxdjango
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        run: rndxdjango
+    spec: 
+      containers:
+      - name: rndxdjango
+        image: 211448159615.dkr.ecr.us-east-1.amazonaws.com/rndx:1
+        ports: 
+        - containerPort: 80
