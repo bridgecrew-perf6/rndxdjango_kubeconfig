@@ -17,3 +17,8 @@ spec:
         image: 211448159615.dkr.ecr.us-east-1.amazonaws.com/rndx_django:<tag>
         ports: 
         - containerPort: 8000
+        env:
+          - name: HOST_IP
+            valueFrom:
+              fieldRef:
+                fieldPath: status.hostIP
